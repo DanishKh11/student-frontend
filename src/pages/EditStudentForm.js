@@ -27,7 +27,7 @@ const EditModal = ({ student, onClose, onSave }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`https://student-backend-production-c9a0.up.railway.app/students/${student._id}`, {
+      await axios.put(`https://student-backend-production-5864.up.railway.app/students/${student._id}`, {
         ...formData,
         edited: true,
       });
@@ -149,3 +149,4 @@ function EditStudent() {
 }
 
 export default EditStudent;
+
