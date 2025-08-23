@@ -19,7 +19,7 @@ const ViewStudents = () => {
 
     try {
       // Try deleting
-      await axios.delete(`https://student-backend-production-c9a0.up.railway.app/students/${id}`);
+      await axios.delete(`https://student-backend-production-5864.up.railway.app/students/${id}`);
       // Remove from local state
       setStudents((prev) => prev.filter((s) => s._id !== id && s.id !== id));
       alert(`${name} was deleted successfully.`);
@@ -73,3 +73,4 @@ const ViewStudents = () => {
 };
 
 export default ViewStudents;
+
