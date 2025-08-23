@@ -99,7 +99,7 @@ function EditStudent() {
 
   const fetchStudents = async () => {
     try {
-      const res = await axios.get('https://student-backend-production-c9a0.up.railway.app/students');
+      const res = await axios.get('https://student-backend-production-5864.up.railway.app/students');
       setStudents(res.data);
     } catch (err) {
       console.error('Failed to fetch students:', err);
@@ -149,4 +149,5 @@ function EditStudent() {
 }
 
 export default EditStudent;
+
 
