@@ -11,7 +11,7 @@ const AddStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://student-backend-production-c9a0.up.railway.app/students', student);
+      await axios.post('https://student-backend-production-5864.up.railway.app/students', student);
       alert('Student added successfully!');
       setStudent({ name: '', email: '', age: '', course: '' });
     } catch (error) {
@@ -35,3 +35,4 @@ const AddStudent = () => {
 };
 
 export default AddStudent;
+
